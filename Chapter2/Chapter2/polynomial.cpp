@@ -16,12 +16,12 @@ void Polynomial::add(Polynomial& p2)
 	if (this->m_degree > p2.m_degree)
 	{
 		for (unsigned i = 0; i < p2.m_degree; ++i)
-			this->m_coef[i] += p2.m_coef[i];
+			this->m_coef[this->m_degree -1-i] += p2.m_coef[p2.m_degree - 1 - i];
 	}
 	else
 	{
 		for (unsigned i = 0; i < this->m_degree; ++i)
-			this->m_coef[i] += p2.m_coef[i];
+			this->m_coef[this->m_degree - 1 - i] += p2.m_coef[p2.m_degree - 1 - i];
 	}
 }
 
@@ -45,7 +45,7 @@ void Polynomial::display()
 {
 	for (unsigned i = 0; i < m_degree; ++i)
 	{
-		std::cout << this->m_coef[i] << " ";
+		std::cout << this->m_coef[i] << "x^" << m_degree - i - 1 <<" +\t";
 	}
 	std::cout << "\n\n";
 }
