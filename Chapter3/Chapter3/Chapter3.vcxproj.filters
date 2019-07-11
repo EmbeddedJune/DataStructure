@@ -24,12 +24,18 @@
     <ClInclude Include="studentstack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="OperandStack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="studentstack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OperandStack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
